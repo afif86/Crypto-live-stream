@@ -1,0 +1,178 @@
+@use postcss-preset-env {
+    stage: 0;
+  }
+  
+  :root {
+    --color-background: #f8ddff;
+    --color-primary: #f9aef0;
+    --color-secondary: #8b90fa; 
+    --font-family-base: Poppin, sans-serif;
+    --font-size-h1: 1.25rem;
+    --font-size-h2: 1rem;
+    --font-size-i: 13px;
+    --font-size-span: 13px;
+
+  }
+  
+ 
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    display: grid;
+    font-family: var(--font-family-base);
+    line-height: 1.5;
+    margin: 0;
+    min-block-size: 100vh;
+    padding: 5vmin;
+    place-items: center;
+  }
+  
+  button {
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  
+  h1 {
+    font-size: var(--font-size-h1);
+    line-height: 1.2;
+    margin-block: 0 1.5em;
+  }
+  
+  h2 {
+    font-size: var(--font-size-h2);
+    line-height: 1.2;
+    margin-block: 0 0.5em;
+  }
+  
+  
+  .align {
+    display: grid;
+    place-items: center;
+  }
+  
+  .button {
+    align-items: center;
+    background: linear-gradient(109.2deg, var(--color-primary) 6.5%, var(--color-secondary) 97.1%);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    padding-block: 0.75em;
+    padding-inline: 1em;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  
+  .button:focus,
+  .button:hover {
+    background-color: #e96363;
+  }
+  
+  .button--full {
+    inline-size: 100%;
+  }
+  
+  .card {
+    border-radius: 1em;
+    background: linear-gradient(109.2deg, var(--color-primary) 6.5%, var(--color-secondary) 97.1%);
+    color: #fff;
+    padding: 0.5em 1em;
+  }
+  
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+  }
+  
+  .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: currentColor;
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  
+  .iphone {
+    background-color: #fbf6f7;
+    background-image: linear-gradient(to bottom, #fbf6f7, #fff);
+    border-radius: 2em;
+    block-size: 812px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    inline-size: 375px;
+    overflow: auto;
+    padding: 2em;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 2.2fr;
+    padding: 8px 15px;
+    /* margin: 20px; */
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #333131;
+    cursor: pointer;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    margin: 10px 0;
+  }
+
+  .money {
+    text-align: center;
+  }
+
+  .green span{
+    color: #03bc03;
+    font-size: var(--font-size-span);
+    font-weight: 600;
+  }
+
+  .green i {
+    color: #03bc03;
+    font-size: var(--font-size-i);
+  }
+
+  .red span{
+    color: #f81f1f;
+    font-weight: 600;
+    font-size: var(--font-size-span);
+  }
+
+  .red i {
+    color: #f81f1f;
+    font-size: var(--font-size-i);
+    font-weight: 700;
+  }
+
+  #crypto-info {
+    margin-top: 15px;
+  }
+
+  .crypto img{
+    width: 30px;
+    margin-top: 8px;
+  }
+
+  .current-price {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .currency_name {
+font-size: 14px;
+font-weight: 600;
+  }
