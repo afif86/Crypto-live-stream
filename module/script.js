@@ -42,7 +42,7 @@ wss.onmessage = (e) => {
         stockPriceElement.innerHTML = `<Span>${price} €</Span>`;
 
         input.innerHTML = `<div class='currency_name'>${stockObject.data.s}</div>
-                           <div style='font-size:14px;'>24h Change</div>`;
+                           <div style='font-size:14px;'>24h Change</div>`; 
 }
 
 ws24.onmessage = (e) => {
